@@ -12,7 +12,7 @@ script: scripts/build.sh
 # branch whitelist
 branches:
   only:
-  - master     # test the gh-pages branch
+  - site     # test the gh-pages branch
 
 env:
   global:
@@ -23,4 +23,4 @@ deploy:
   provider: script
   script: scripts/deploy.sh
   on:
-    branch: master
+    branch: site
