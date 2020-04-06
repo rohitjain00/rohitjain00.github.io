@@ -3,5 +3,5 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-home_text : Sample Website Second Deploy
+home_text: Web developer who loves python.
 ---
