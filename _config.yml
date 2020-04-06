@@ -2,7 +2,7 @@ title: Rohit Jain' Portfolio
 email: imsleepx@gmail.com
 
 baseurl: "" # the subpath of your site, e.g. /blog
-
+url: "https://therohitjain.com"
 
 # Build settings
 markdown: kramdown
