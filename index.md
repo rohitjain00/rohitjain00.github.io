@@ -4,4 +4,5 @@
 
 layout: home
 home_text: Web developer who loves python.
+title: Rohit Jain
 ---
