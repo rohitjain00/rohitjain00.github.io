@@ -1,12 +1,21 @@
-# Get Started With Options
+---
+layout: post
+comments: true
+title : Get Started With Options Part-1
+categories: [Finance, Option]
+---
+
+
 
 ### What are options, futures and stocks?
 
-A **Stock** represent a fraction of the ownership of the comapny/assets. A unit of stock is called shares. The price of the shares is decided by the demand and supply of the shares. ([Investopedia Link](https://www.investopedia.com/terms/s/stock.asp))
+A **Stock** represent a fraction of the ownership of the comapny/assets. A unit of stock is called shares. The price of the shares is decid
+ed by the demand and supply of the shares. ([Investopedia Link](https://www.investopedia.com/terms/s/stock.asp))
 
 A **future** is a contract to buy the stock at the set price regardless of the current price. Futures have expiration date and a set amount that are sold for a premium. One can purchase future for a premium to limit the risk of the price change. Once the future comes to an end the buyer is obliged to puchase the underlying assets. ([Investopedia Link](https://www.investopedia.com/terms/f/futures.asp))
 
-An **option** is similar to the futures, but it provides user the choice of accepting or refusing to buy the assets/stocks at the time of expirations.([Investopedia Link](https://www.investopedia.com/terms/o/option.asp)) These are of two types.
+An **option** is similar to the futures, bu
+t it provides user the choice of accepting or refusing to buy the assets/stocks at the time of expirations.([Investopedia Link](https://www.investopedia.com/terms/o/option.asp)) These are of two types.
 
   **Call Options :** Gives buyer the option to purchase the stock/assets at predetermined price. ([Investopedia Link](https://www.investopedia.com/terms/c/calloption.asp))
 
@@ -18,13 +27,11 @@ An **option** is similar to the futures, but it provides user the choice of acce
 
 **Moneyness** refers to the state of profit/loss  with respect to the underlying stock or asset's current or future price. ([Investopedia link](https://www.investopedia.com/terms/m/moneyness.asp)) There are 5 types of of moneyness
 
-1. Deep In The Money :
+1. Deep In The Money
 2. In the Money
 3. At the Money
 4. Out of the Money
 5. Deep Out of the Money
-
-
 
 ## Elementary strategy
 
@@ -66,9 +73,8 @@ As of the above diagrams we can conclude that :
 
 ​		If the graph bends, it will do so at an exercise price. We can calculate profit/loss at each exercise price and simply connect points with straight line.
 
+### Terminology
 
-  ### Terminology
-
-  * `underlying asset` or `uderlying` : The asset to be brought or sold under the term of the option
-  * `exercise price` or `strike price` : The price at which the underlying will be delivered if the holder chooses to exercise his right to buy/sell.
-  * `expiration date` : date after which the option may no longer be exercised.
+1. `underlying asset` or `uderlying` : The asset to be brought or sold under the term of the option
+2. `exercise price` or `strike price` : The price at which the underlying will be delivered if the holder chooses to exercise his right to buy/sell.
+3. `expiration date` : date after which the option may no longer be exercised.
