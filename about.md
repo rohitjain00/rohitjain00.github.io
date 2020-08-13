@@ -1,5 +1,5 @@
 ---
-title: About
+title: Rohit Jain | About
 layout: description
 permalink: /about/
 ---
