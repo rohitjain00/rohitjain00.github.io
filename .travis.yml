@@ -6,9 +6,7 @@ before_install:
 - chmod +x scripts/build.sh
 - chmod +x scripts/deploy.sh
 
-install: 
-- gem install sprockets -v 4.0.0.beta8
-- gem install dev-portfolio-blog html-proofer
+install: gem install dev-portfolio-blog html-proofer
 script: scripts/build.sh
 
 # branch whitelist
