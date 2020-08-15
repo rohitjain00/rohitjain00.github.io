@@ -11,7 +11,7 @@ if [[ $TRAVIS_BRANCH == 'site' ]] ; then
 
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-  git push --force --quiet "https://rohitjain00:${GH_TOKEN}@github.com/rohitjain00/rohitjain00.github.io.git" master:master > /dev/null 2>&1
+  git push --force --quiet "https://${GH_TOKEN}@github.com/rohitjain00/rohitjain00.github.io.git" master:master > /dev/null 2>&1
 else
   echo 'Invalid branch. You can only deploy from site.'
   exit 1
