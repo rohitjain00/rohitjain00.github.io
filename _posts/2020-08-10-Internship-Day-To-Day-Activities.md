@@ -5,9 +5,7 @@ title : My Internship Experience at IOV
 categories: [Internship, Blockchain]
 ---
 
-# [IOV](https://iov.one/)
-
-IOV provides a universal protocol for blockchains and wallet users.
+[IOV](https://iov.one/) provides a universal protocol for blockchains and wallet users.
 
 IOV solves the problem of complexity, human error and lack of  interoperability when exchanging digital assets on the blockchain.
 
