@@ -35,4 +35,8 @@ I was provided with some material by Antoine to help we getting familiar with Bi
 
 ## Week 2 (17 August - 21 August)
 
-Yet to come.
+I was provided this time to go through some libraries and code of the applications so that I could have an idea of how the app is working? what different components are used in the applications. Also, I read about [Mnemonic Phrase](https://kb.myetherwallet.com/en/security-and-privacy/what-is-a-mnemonic-phrase/) and how they are generated for the user.
+
+
+## Week 3 (24 August - 28 August)
+--
