@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-home_text: Web developer who loves python.
+home_text: Angular | React | Python | Jekyll
 title: Rohit Jain
 ---
