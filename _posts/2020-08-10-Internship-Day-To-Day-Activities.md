@@ -39,4 +39,9 @@ I was provided this time to go through some libraries and code of the applicatio
 
 
 ## Week 3 (24 August - 28 August)
---
+
+I started working on a react application working on issues as opened by the team while testing the application.
+
+## Week 4 (31 August - 4 September)
+
+This week in addition to the react application I worked on a web scrapping project and the automation to verify data using Travis Ci.
