@@ -3,6 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-home_text: Angular | React | Python | Jekyll
+home_text: PhD | Photography | Art | Me
 title: Rohit Jain
 ---
