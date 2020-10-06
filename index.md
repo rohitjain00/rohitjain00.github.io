@@ -4,5 +4,5 @@
 
 layout: home
 home_text: PhD | Photography | Art | Me
-title: Rohit Jain
+title: Going North
 ---
