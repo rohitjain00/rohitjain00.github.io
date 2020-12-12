@@ -45,31 +45,31 @@ Checkout my projects @ [Github](https://github.com/rohitjain00)
 
 ## Experience
 
-* #### [IOV](https://iov.one/)
+* #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Present)
 
-    IOV has developed and provides a universal Name Service for blockchains. It provides starnames which acts as a DNS for crypto wallets.
+    * Currently working on a React / React Native based application for easy management of crypto wallets and profiles.
 
-    Software Engineer Intern:
+* #### Software Engineer Intern @Fuzzy Sense - (May 2020 - Jan 2020)
 
-      Currently working on a React Native based application.
+    * Worked on a Python application on option’s strategies.
+    * Implemented parallel programming which resulted in a reduction of 40%
+execution time.
 
-    August 2020 - Present
+* #### Front end Intern @[Creesync Software](https://www.linkedin.com/company/creesync-software/) - (Jul 2018 - Jan 2019)
 
-
-* #### Fuzzy Sense Pvt. ltd.
-
-    Software Engineer Intern:
-
-      Worked on an open source [option strategy generator](https://github.com/rohitjain00/option-trading-strategy).
+    * Worked on the creation and development of modular web templates from UI/UX designs to be plugged into FrontEnd frameworks.
 
 
-    May 2020 -Jan 2020
+## Hackathons
 
+* #### [Amazon AWS Raise-Up Buildathon](https://amazonraiseup.devpost.com/)
 
-* #### [Creesync Software](https://www.linkedin.com/company/creesync-software/)
+    [Cloutvocate](https://devpost.com/software/cloutvocate) -  Best in Nonprofit Fundraising
 
-    Front end Intern:
+    Team : [Kori](https://www.linkedin.com/in/koriskeffington/), [Romeo](https://www.linkedin.com/in/romeo-radanyi-9a815882/), [Hendy](https://www.linkedin.com/in/hendyirawan/), [Michelle](https://www.linkedin.com/in/michelle-z-54594a138/), [Shelli](https://www.linkedin.com/in/shelligorokhovsky/)
 
-      Worked on creating optimized web templates.
+* #### [Bob Build-A-Thon](https://www.hackerearth.com/challenges/hackathon/bobs-build-a-thon/)
 
-    Jul 2018 -Jan 2019
+    [FAT-Burn](https://www.hackerearth.com/challenges/hackathon/bobs-build-a-thon/dashboard/12c2545/submission/) - 1st prize
+
+    Team : [Priyanshu](https://www.linkedin.com/in/priyanshu-garg-a9b966154/)
