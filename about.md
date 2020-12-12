@@ -5,22 +5,27 @@ permalink: /about/
 ---
 Hi, I am Rohit jain currently final year undergradutate at [JIIT](http://www.jiit.ac.in/) with Computer Science and Engineering as major.
 
-I have a huge interest in creating web applications with managing all the aspects of it i.e. the frontend(Angular, React), backend(Flask-Rest-API), database(MongoDB, using ORM over SQL, graphql), hosting (gh-pages, aws amplify, Heroku) and managing domain (creating A record for a subdomain). Also, I have experience in creating Flutter applications using firebase as a backend service.
+I have a huge interest in creating web applications with managing all the aspects of it i.e. the frontend(Angular, React), backend(Flask-Rest-API), database(MongoDB, using ORM over SQL, graphql), hosting (gh-pages, aws, Heroku) and managing domain. Also, I have experience in creating Flutter applications using firebase as the backend service.
 
 Further, I am experienced in using Docker and Docker-compose for packaging an application along with the Continuous Integration and Continuous Development of the application. In a recent project, I've also used AWS, making me familiar with the microservices and how to use it to scale an application.
 
-I have interest in finance and love reading about it. I also created a trading bot for cryptocurrency and options strategy generator.
+I have interest in finance and love reading about it. I also created a trading bot for cryptocurrency and worked on an options strategy generator.
 
-Checkout my projects @ [Github](https://github.com/rohitjain00)
+Checkout my projects @[Github](https://github.com/rohitjain00)
 
 ## Skills:
 
-* **Language :** Java, Python, Javascript, Arduino, Dart
-* **Databases :** MySQL, MongoDB, GraphQL
-* **Frontend :** Angular, React, Jekyll, Flutter
-* **Backend :** Flask, Firebase
-* **CI/CD :** Travis CI, Heroku
-* **Devops :** Docker, Docker-compose
+**Language :** Java, Javascript, Python(Flask), Dart
+
+**Frontend :** ES6, Typescript, Angular, Jekyll
+
+**Mobile :** React Native, Flutter
+
+**Databases :** GraphQL, MongoDB, MySQL
+
+**Misc :** Nginx, Docler, CI/CD, GCP and AWS services
+
+
 
 ## Projects:
 1. #### [Crypto Trading Bot](https://github.com/rohitjain00/Trading-Bot​):
@@ -43,7 +48,7 @@ Checkout my projects @ [Github](https://github.com/rohitjain00)
 
     React Native based clock app. This is simple clock component where the user can change the font, color, timezone and the format.
 
-## Experience
+## Work Experience
 
 * #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Present)
 
