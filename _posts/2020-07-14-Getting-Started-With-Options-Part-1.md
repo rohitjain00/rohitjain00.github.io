@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title : Getting Started With Options Part-1
+title : Getting Started With Options
 categories: [Finance, Option]
 ---
 
