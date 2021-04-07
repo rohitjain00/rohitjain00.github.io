@@ -28,7 +28,7 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 
 ## Projects:
-1. #### [Crypto Trading Bot](https://github.com/rohitjain00/Trading-Bot​):
+1. #### [Crypto Trading Bot](https://github.com/rohitjain00/Trading-Bot):
 
     A trading bot based on Bollinger band strategy to generate buy/sell signals. Currently the project uses Binance apiV3 to fetch live data.
 
