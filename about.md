@@ -3,7 +3,7 @@ title: Rohit Jain | About
 layout: description
 permalink: /about/
 ---
-Hi, I am Rohit jain currently final year undergradutate at [JIIT](http://www.jiit.ac.in/) with Computer Science and Engineering as major.
+Hi, I am Rohit jain.
 
 I have a huge interest in creating web applications with managing all the aspects of it i.e. the frontend(Angular, React), backend(Flask-Rest-API), database(MongoDB, using ORM over SQL, graphql), hosting (gh-pages, aws, Heroku) and managing domain. Also, I have experience in creating Flutter applications using firebase as the backend service.
 
@@ -49,6 +49,10 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
     React Native based clock app. This is simple clock component where the user can change the font, color, timezone and the format.
 
 ## Work Experience
+
+* #### Software Developer Engineer Intern Amazon - (Feb 2021 - Present)
+
+    * Working on React based framework on a web application.
 
 * #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Present)
 
