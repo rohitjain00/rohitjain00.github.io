@@ -50,7 +50,7 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 ## Work Experience
 
-* #### Software Developer Engineer Intern Amazon - (Feb 2021 - Present)
+* #### Software Developer Engineer Intern @[Amazon](https://www.amazon.com/) - (Feb 2021 - Present)
 
     * Working on React based framework.
 
