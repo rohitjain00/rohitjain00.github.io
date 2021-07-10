@@ -52,11 +52,11 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 * #### Software Developer Engineer Intern Amazon - (Feb 2021 - Present)
 
-    * Working on React based framework on a web application.
+    * Working on React based framework.
 
-* #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Present)
+* #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Dec 2020)
 
-    * Currently working on a React / React Native based application for easy management of crypto wallets and profiles.
+    * Worked on a React / React Native based application for easy management of crypto wallets and profiles.
 
 * #### Software Engineer Intern @Fuzzy Sense - (May 2020 - Jan 2020)
 
