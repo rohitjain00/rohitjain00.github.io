@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sudo apt-get install nodejs
       - uses: actions/cache@v2
         with:
           path: vendor/bundle
