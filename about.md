@@ -42,7 +42,7 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 4. #### [dev-portfolio-blog](https://github.com/rohitjain00/dev-portfolio-blog)
 
-    Jekyll based theme used to host blogs, profile and Resume. Simple and optimized minimal theme for users. For example the website you are currently using.
+    Jekyll based theme used to host blogs, profile and Resume. Simple and optimized minimal theme for users. For example the website you are currently using. This has currently over 12k downloads and used by over 60 people for hosting their portfolios.
 
 5. #### [Clock App](https://github.com/rohitjain00/ClockApp)
 
@@ -50,9 +50,16 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 ## Work Experience
 
-* #### Software Developer Engineer Intern @[Amazon](https://www.amazon.com/) - (Feb 2021 - Present)
+* #### Sofware Developer Engineer @[Amazon](https://www.amazon.com/) - (Aug 2021 - Present)
 
-    * Working on React based framework.
+    * Working in Amazon Pay’s core services team, integrating with new services, improving the latency and the overall merchant’s and user’s experience.
+    * Experienced in application security - Threat Analysis & Risk mitigation to get them certified for release.
+    * Worked on Prime Video International Expansion, working with different teams to launch Prime Video available in different countries in local currency.
+
+* #### Software Developer Engineer Intern @[Amazon(Prime Video)](https://www.primevideo.com) - (Feb 2021 - July 2021)
+
+    * Worked on an internal tool for creating and managing async workflows based on AWS step function.
+    * Worked on updating the string lookup pattern for Prime Video which saved 
 
 * #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Dec 2020)
 
