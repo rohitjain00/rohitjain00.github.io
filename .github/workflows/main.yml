@@ -9,17 +9,15 @@ jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v2
-        with:
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
+       with:
           path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-gems-
-      - uses: actions/setup-node@v3
+      - uses: jeffreytse/jekyll-deploy-action@v0.4.0
         with:
-          node-version: 16
-      - uses: helaili/jekyll-action@v2
-        with:
+          provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'workflow-test'
+          branch: 'workflow-test'
