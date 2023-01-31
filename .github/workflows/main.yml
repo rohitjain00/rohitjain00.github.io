@@ -20,4 +20,5 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
+          pre_build_commands: pacman -S --noconfirm nodejs npm
           branch: 'workflow-test'
