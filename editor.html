@@ -1,0 +1,107 @@
+<html>
+
+<head>
+	<title>
+		Make Custom Webpage!!
+	</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script class="add_customJSS">
+	</script>
+	<style class="custom_CSS">
+	</style>
+	<style>
+		textarea {
+			margin-top: 5px;
+		}
+	</style>
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111708992-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111708992-1');
+	</script>
+
+</head>
+
+<body>
+	<form>
+		<div class="form-group form-inline">
+			<div style="display : inline;">
+				<textarea style="width : 33%;" rows=3 0 name=t ext class="HTML form-control" placeholder="Custom HTML" autofocus></textarea>
+
+				<textarea style="width : 33%;" rows=3 0 name=t ext class="CSS form-control" placeholder="Custom CSS"></textarea>
+
+				<textarea style="width : 33%;" rows=3 0 name=t ext class="Javascript form-control" placeholder="Custom Javascript"></textarea>
+			</div>
+			<div>
+				<textarea style="width : 86%;line-height: 1; align : center" rows=2 name=t ext class="additional_scripts form-control" placeholder="Custom Libraries to add"></textarea>
+				<button class="btn btn-primary" style="width : 13%;" onclick="download('yourFile.html')"> Download </button>
+			</div>
+
+		</div>
+	</form>
+	<div>
+		<p style="font-size: 0.8em; text-align: center;">
+			....Make your custom webpage with live preview and download it!!....
+			<br> ....Downloading it will erase all the data on the page....
+		</p>
+	</div>
+	<hr>
+	<div id="out">
+	</div>
+	<div id="allpage_code">
+	</div>
+	<script>
+		//on change in any text area the page is modified accordingly
+		$(".HTML").on("input propertychange", function () {
+			$("#out").html($(".HTML").val());
+		});
+		$(".CSS").on("input propertychange", function () {
+			$(".custom_CSS").html($(".CSS").val());
+		});
+		$(".javascript").on("input propertychange", function () {
+			$(".add_customJSS").html($(".Javascript").val());
+		});
+		$(".additional_scripts").on("input propertychange", function () {
+			$("head").append($(".additional_scripts").val());
+		});
+
+		function download(filename = "Yourfile.html", userHTML) {
+			userHTML = "<html> <head>" +
+				$(".additional_scripts").val() +
+				" <style>" +
+				$(".CSS").val() +
+				" </style>" +
+				" </head>" +
+				" <body>" +
+				$(".HTML").val() +
+				" <script>" +
+				$(".Javascript").val() +
+				" <\/script>" +
+				" <\/body>" +
+				" <\/html>";
+
+			var element = document.createElement('a');
+			element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(userHTML));
+			element.setAttribute('download', filename);
+			element.setAttribute('target', "_blank");
+
+			element.style.display = 'none';
+			document.body.appendChild(element);
+
+			element.click();
+
+			document.body.removeChild(element);
+		}
+	</script>
+</body>
+
+</html>
