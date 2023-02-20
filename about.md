@@ -5,11 +5,10 @@ permalink: /about/
 ---
 Hi, I am Rohit jain.
 
-I have a huge interest in creating web applications with managing all the aspects of it i.e. the frontend(Angular, React), backend(Flask-Rest-API), database(MongoDB, using ORM over SQL, graphql), hosting (gh-pages, aws, Heroku) and managing domain. Also, I have experience in creating Flutter applications using firebase as the backend service.
-
-Further, I am experienced in using Docker and Docker-compose for packaging an application along with the Continuous Integration and Continuous Development of the application. In a recent project, I've also used AWS, making me familiar with the microservices and how to use it to scale an application.
-
-I have interest in finance and love reading about it. I also created a trading bot for cryptocurrency and worked on an options strategy generator.
+Software Engineer with 1+ year of experience. Have worked on Amazon Pay’s
+core service having experience in all stages of software development cycles
+including technical design, development, debugging & release. Proficient in
+taking ownership, going above and beyond to Delivering results
 
 Checkout my projects @[Github](https://github.com/rohitjain00)
 
@@ -21,9 +20,11 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 **Mobile :** React Native, Flutter
 
-**Databases :** GraphQL, MongoDB, MySQL
+**Databases :** GraphQL, DynamoDB, MySQL
 
-**Misc :** Nginx, Docler, CI/CD, GCP and AWS services
+**Cloud Services :** AWS(SQS/SNS, DynamoDB, cloudwatch)
+
+**Misc :** Nginx, Docler, CI/CD
 
 
 
@@ -52,14 +53,20 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 * #### Sofware Developer Engineer @[Amazon](https://www.amazon.com/) - (Aug 2021 - Present)
 
-    * Working in Amazon Pay’s core services team, integrating with new services, improving the latency and the overall merchant’s and user’s experience.
+    * Working in Amazon Pay’s core services team
+        * Worked on migrating payment contract service that decreased the latency for contract related calls upto 30% and reduced the OE load on the team upto 20%.
+        * Worked on a fast paced live issue that prevented Amazon Pay being disabled by over 51 clients in the IN marketplace.
     * Experienced in application security - Threat Analysis & Risk mitigation to get them certified for release.
-    * Worked on Prime Video International Expansion, working with different teams to launch Prime Video available in different countries in local currency.
+    * Worked on Prime Video International Expansion
+        * Worked on automating the process for price change in different countries which resulted in the process from 1 week to 2 days.
+        * Worked on launching Prime Video in local currency in Sweden.
+
 
 * #### Software Developer Engineer Intern @[Amazon(Prime Video)](https://www.primevideo.com) - (Feb 2021 - July 2021)
 
-    * Worked on an internal tool for creating and managing async workflows based on AWS step function.
-    * Worked on updating the string lookup pattern for Prime Video which saved 
+    * Worked on updating the string lookup logic for Prime Video which resulted in saving upto 40% in storage for translated strings while launching a new country.
+    * Worked on an internal automation tool, which acts as an admin dashboard for launching new countries and helps in automating the launch flow based on AWS step functions.
+
 
 * #### Contractor @[IOV](https://iov.one/) - (Aug 2020 - Dec 2020)
 
