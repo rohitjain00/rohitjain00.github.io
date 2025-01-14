@@ -1,11 +1,12 @@
 ---
 layout: post
 comments: true
-title : Getting Started With Options
+title : Test Blog
 categories: [Finance, Option]
 ---
 
 
+# HELLO!
 
 ### What are options, futures and stocks?
 
