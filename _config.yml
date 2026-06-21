@@ -7,7 +7,7 @@ url: "https://therohitjain.com"
 # Build settings
 markdown: kramdown
 theme: dev-portfolio-blog
-resume_url: "Resume.pdf"
+resume_url: "Rohit-Jain-Resume.pdf"
 author_name: Rohit Jain
 
 ############################################################
@@ -137,7 +137,12 @@ assets:
     img: { optim: {} }
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate-v2
   - jekyll-minifier
+  - jemoji
 
 google_analytics: "UA-114665281-1"
 
@@ -147,4 +152,7 @@ disqus:
 
 pwa: true
 
-exclude: [vendor]
+exclude:
+  - vendor
+  - README.md
+  - scripts

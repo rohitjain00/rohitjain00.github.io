@@ -3,7 +3,7 @@ title: Rohit Jain | About
 layout: description
 permalink: /about/
 ---
-Hi, I am Rohit jain.
+Hi, I am Rohit Jain.
 
 Software Engineer with 1+ year of experience. Have worked on Amazon Pay’s
 core service having experience in all stages of software development cycles
@@ -29,7 +29,7 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 
 ## Projects:
-1. #### [Crypto Trading Bot](https://github.com/rohitjain00/Trading-Bot​):
+1. #### [Crypto Trading Bot](https://github.com/rohitjain00/Trading-Bot):
 
     A trading bot based on Bollinger band strategy to generate buy/sell signals. Currently the project uses Binance apiV3 to fetch live data.
 
@@ -74,7 +74,7 @@ Checkout my projects @[Github](https://github.com/rohitjain00)
 
 * #### Software Engineer Intern @Fuzzy Sense - (May 2020 - Jan 2020)
 
-    * Worked on a Python application on option’s strategies.
+    * Worked on a Python application on options strategies.
     * Implemented parallel programming which resulted in a reduction of 40%
 execution time.
 
