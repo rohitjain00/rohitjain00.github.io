@@ -9,13 +9,11 @@ categories: [Finance, Option]
 
 ### What are options, futures and stocks?
 
-A **Stock** represent a fraction of the ownership of the comapny/assets. A unit of stock is called shares. The price of the shares is decid
-ed by the demand and supply of the shares. ([Investopedia Link](https://www.investopedia.com/terms/s/stock.asp))
+A **stock** represents a fraction of ownership in a company or asset. A unit of stock is called a share. The price of shares is decided by demand and supply. ([Investopedia Link](https://www.investopedia.com/terms/s/stock.asp))
 
-A **future** is a contract to buy the stock at the set price regardless of the current price. Futures have expiration date and a set amount that are sold for a premium. One can purchase future for a premium to limit the risk of the price change. Once the future comes to an end the buyer is obliged to puchase the underlying assets. ([Investopedia Link](https://www.investopedia.com/terms/f/futures.asp))
+A **future** is a contract to buy a stock or asset at a set price regardless of the current market price. Futures have an expiration date and are sold for a premium. One can purchase a future to limit the risk of a price change. Once the future expires, the buyer is obliged to purchase the underlying asset. ([Investopedia Link](https://www.investopedia.com/terms/f/futures.asp))
 
-An **option** is similar to the futures, bu
-t it provides user the choice of accepting or refusing to buy the assets/stocks at the time of expirations.([Investopedia Link](https://www.investopedia.com/terms/o/option.asp)) These are of two types.
+An **option** is similar to a future, but it gives the buyer the choice to buy or sell the asset at expiration. ([Investopedia Link](https://www.investopedia.com/terms/o/option.asp)) Options are of two types.
 
   **Call Options :** Gives buyer the option to purchase the stock/assets at predetermined price. ([Investopedia Link](https://www.investopedia.com/terms/c/calloption.asp))
 
@@ -49,7 +47,7 @@ We might think that one can always buy call option due its limited risk and the 
 
 #### 2. Combination Strategies
 
-When considering the option trade we need not to limit ourself with purchase or sale of an individual option. We can create our profit/loss graph with combining differnet options.
+When considering an options trade, we do not need to limit ourselves to the purchase or sale of an individual option. We can create a profit/loss graph by combining different options.
 
 For example if we buy a call option and a put option or we sell a put option and a call option. we can alter the graph as below.
 
@@ -63,18 +61,18 @@ For example if we buy a call option and a put option or we sell a put option and
 
 
 
-This graph can further be changed with purchashing options of different values and buying/selling a call/put option.
+This graph can be changed further by purchasing options with different strike prices and buying or selling call and put options.
 
 
 
 ### How to construct a expiration graph
 
-As of the above diagrams we can conclude that :
+As of the above diagrams we can conclude that:
 
-​		If the graph bends, it will do so at an exercise price. We can calculate profit/loss at each exercise price and simply connect points with straight line.
+If the graph bends, it will do so at an exercise price. We can calculate profit or loss at each exercise price and simply connect the points with straight lines.
 
 ### Terminology
 
-1. `underlying asset` or `uderlying` : The asset to be brought or sold under the term of the option
+1. `underlying asset` or `underlying` : The asset to be bought or sold under the terms of the option
 2. `exercise price` or `strike price` : The price at which the underlying will be delivered if the holder chooses to exercise his right to buy/sell.
 3. `expiration date` : date after which the option may no longer be exercised.

@@ -1,115 +1,106 @@
 ---
 layout: post
 comments: true
-title : How to Host Jekyll Blogs on Github Pages Using Travis
+title : How to Host Jekyll Blogs on GitHub Pages Using GitHub Actions
 categories: [Jekyll, Deployment]
 ---
 
-If you're reading this blog I'm assuming that you're already familiar with Jekyll and looking for a way to automate the process of hosting your blog online.
+If you are reading this blog, I am assuming that you are already familiar with Jekyll and want to automate publishing your blog online.
+
+This site now uses GitHub Actions to build the Jekyll source from the `site` branch and publish the generated `_site` output to the `master` branch, which GitHub Pages serves.
 
 ## What are we going to do?
-We're using a third party app called `Travis CI` to automatically publish our blog to the `github pages`.
 
-#### [Travis CI](https://travis-ci.com/)
-  As specified in the name 'CI' stands for `Continous Integration`. It is a hosted continous integration service used to build and test software projects. Also, it's Free ;)
+We will use a GitHub Actions workflow to:
 
-#### [Github Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages)
-  GitHub Pages is a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub, optionally runs the files through a build process, and publishes a website.
+1. Run every time a commit is pushed to the `site` branch.
+2. Install Ruby and the Jekyll dependencies.
+3. Build the site with `bundle exec jekyll build`.
+4. Deploy the generated `_site` directory to the `master` branch.
 
-## How will the whole thing work?
-After linking the github with Travis, it will automatically determine the public repos with a `.travis.yml` file and executes the file. When there is a change in the repository(like a new commit), the whole build process is triggered. So everytime we make changes to our blog, travis sees the changes and builds a new version of the website.
+## Repository structure
 
-The part of the process is to automate the pushing of the website to the github repo. For this we need a way for Travis to access and commit to the github repository. This can be done with a personal access token ([PAT](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)) on Github. We provide Travis with the PAT and now it can push back to the Git repo.
+This setup uses two branches:
 
-**So now we need to tell Travis to setup the ruby environment, build the blog and push the code back to the git repo.**
+1. `site` - the source branch containing the Jekyll project, posts, pages, and configuration.
+2. `master` - the generated static site that GitHub Pages publishes.
 
-## Follow the steps below to add automation to your Jekyll blog
+Set the repository's default development branch to `site`, then configure GitHub Pages to publish from the `master` branch.
 
-**1. Create an branch `site` and set it as defualt branch on Github. ([GH docs](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/changing-the-default-branch))**
+## GitHub Actions workflow
 
-**2. Create a `.travis.yml` file in your root directory with the following data.**
-
-```yml
-// travis.yml
-language: ruby
-rvm:
-- 2.6.5
-
-before_install:
-- chmod +x scripts/build.sh # makes the scripts executable
-- chmod +x scripts/deploy.sh # makes the scripts executable
-
-script: scripts/build.sh
-
-# branch whitelist
-branches:
-  only:
-  - site     # test the gh-pages branch
-
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: scripts/deploy.sh
-  on:
-    branch: site
-```
-In the config above we did the following
-1. Setup a ruby environment.
-2. Set the script's permission to be executable.
-3. Only work when pushed to the branch `site`
-4. At the time of deploying use a script instead of the default way to deploy and provided the script's path.
-
-**3. Create a folder `scripts` in your root directory with the two scripts file `build.sh` and `deploy.sh`**
-
-**`build.sh`**
+Create `.github/workflows/main.yml` with the following content:
 
 ```yml
-#!/bin/bash
+name: Build and deploy site
 
-// build.sh
-jekyll build
+on:
+  push:
+    branches:
+      - site
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build
+
+      - name: Deploy to master
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: master
 ```
 
-This script bacially just builds the jekyll blog.
+This workflow does not need a personal access token for normal same-repository deployments. GitHub provides `GITHUB_TOKEN` automatically, and the workflow grants it `contents: write` permission so it can update the publishing branch.
 
-**`deploy.sh`**
-```yml
-#!/bin/bash
+## How the deployment works
 
-// deploy.sh
-if [[ $TRAVIS_BRANCH == 'site' ]] ; then
-  cd _site
-  git init
+When you push a commit to `site`, GitHub Actions starts a new build. If another Pages build is already running, the `concurrency` setting cancels the older one and keeps the newest commit moving forward.
 
-  git config user.name "Travis CI"
-  git config user.email "dummy@gmail.com"
-  git add .
-  git commit -m "Deploy"
+After the build succeeds, `peaceiris/actions-gh-pages` commits the generated files from `_site` to `master`. GitHub Pages then serves the updated static site from that branch.
 
-  # We redirect any output to
-  # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-  git push --force --quiet "https://${GH_TOKEN}@github.com/{GITHUB_USERNAME}/{GITHUB_REPO_NAME}.git" master:master > /dev/null 2>&1
-else
-  echo 'Invalid branch. You can only deploy from site.'
-  exit 1
-fi
+You can also run the same deployment manually from the Actions tab because the workflow includes `workflow_dispatch`.
 
+## Local development
+
+Install dependencies:
+
+```bash
+bundle install
 ```
-Replace the `GITHUB_USERNAME` and `GITHUB_REPO_NAME` with your repo's details.
 
-This script does the following
-1. First it checks if the branch used is `site`.
-2. With the build script above the site is built in `_site` folder.
-3. It initialises the `_site` as a git repo, sets the git configs.
-4. It uses the `GH_TOKEN` env variable which we need to setup in the Travis(Step 4). See [PAT](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
-5. To make sure that we don't print the access token we make the output to ` /dev/null 2>&1`. It will bascially hide the output.
+Run the site locally:
 
-**4. Now you need to create a new personal access token on the github** [Refer to GH docs](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+```bash
+bundle exec jekyll serve
+```
 
-**5. In the Travis go to your repository and create a new enviornment variable with name `GH_TOKEN` and set the value to the token you just generated.**
+Build the production site:
 
-**6. Set the gh-pages publishing branch to the master. Refer to this guide [here](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)**
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
 
-At this point, if you create a new commit to your repo, it should trigger a new build on Travis and after a few minutes you should be able to view your blog online.
-
-Let me know in the comments if you face any difficulty while following this guide.
+At this point, every commit pushed to the `site` branch should trigger a fresh website build and publish the result to GitHub Pages.

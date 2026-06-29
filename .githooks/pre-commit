@@ -1,0 +1,16 @@
+#!/bin/sh
+set -eu
+
+branch="$(git branch --show-current 2>/dev/null || true)"
+
+if [ "$branch" != "site" ]; then
+  exit 0
+fi
+
+if [ "${SKIP_JEKYLL_BUILD:-}" = "1" ]; then
+  echo "Skipping Jekyll build because SKIP_JEKYLL_BUILD=1"
+  exit 0
+fi
+
+echo "pre-commit: building Jekyll site with Docker..."
+scripts/build-docker.sh
